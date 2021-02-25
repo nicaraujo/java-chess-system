@@ -1,7 +1,7 @@
 package boardgame;
 
 public class Board {
-    
+
     private int rows;
     private int columns;
     private Piece[][] pieces;
@@ -52,6 +52,7 @@ public class Board {
     public boolean positionExists(Position position) {
         return positionExists(position.getRow(), position.getColumn());
     }
+
     public boolean thereIsAPiece(Position position) {
         if (!positionExists(position)) {
             throw new BoardException("Position does not exist on the board");

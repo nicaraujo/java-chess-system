@@ -3,7 +3,7 @@ package chess;
 import boardgame.Position;
 
 public class ChessPostion {
-    
+
     private char column;
     private int row;
 
@@ -28,12 +28,12 @@ public class ChessPostion {
     }
 
     protected static ChessPostion fromPosition(Position position) {
-        return new ChessPostion((char)('a' - position.getColumn()), 8 - position.getRow());
+        return new ChessPostion((char) ('a' - position.getColumn()), 8 - position.getRow());
     }
 
     @Override
     public String toString() {
         return "" + column + row;
     }
-    
+
 }
